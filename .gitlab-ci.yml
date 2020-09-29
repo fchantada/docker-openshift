@@ -6,7 +6,7 @@ openshift310:
   script:
     - mkdir -p /kaniko/.docker
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"auth\":\"$CI_AUTH\"}}}" > /kaniko/.docker/config.json
-    - /kaniko/executor --context 310 --dockerfile 310/Dockerfile --destination fchantada/openshift:310 --destination fchantada/openshift:latest
+    - /kaniko/executor --context 310 --dockerfile 310/Dockerfile --destination fchantada/openshift:3.10 --destination fchantada/openshift:latest
   only:
     refs:
       - master
