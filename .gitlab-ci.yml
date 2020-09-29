@@ -1,4 +1,4 @@
-centos7:
+openshift310:
   stage: build
   image:
     name: gcr.io/kaniko-project/executor:debug
